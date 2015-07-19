@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+  port: 5432
+
+development:
+  <<: *default
+  database: isomorphic_comments_api_dev
+
+test:
+  <<: *default
+  database: isomorphic_comments_api_test
+
+production:
+  <<: *default
