@@ -2,9 +2,6 @@ require 'api_constraints'
 
 Rails.application.routes.draw do
 
-  # route to CORS preflight checker
-  # match '*all', to: 'application#cors_preflight_check', via: :options
-
   get '/auth/preflight', to: 'application#auth_preflight'
 
   namespace :api, defaults: { format: :json }, constraints: { subdomain: 'api' }, path: '/' do
