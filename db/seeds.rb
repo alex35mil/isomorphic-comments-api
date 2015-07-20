@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+User.create(email: 'demo@demo.me', password: 'demopass')
+
+Comment.create([
+                   { author: 'Alex', comment: 'Yay! It works!' },
+                   { author: 'Guest', comment: 'True! Isomorphic awesomeness!' }
+              ])
