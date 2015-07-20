@@ -15,7 +15,7 @@ Rails.application.routes.draw do
         delete  '/logout',  to: 'sessions#destroy'
       end
 
-      get '/dummy', to: 'dummy#hello'
+      resources :comments, only: [:index, :show, :create, :destroy]
 
     end
 
