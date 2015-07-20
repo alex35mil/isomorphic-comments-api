@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
       devise_for :users, skip: :all
       devise_scope :api_user do
-        post    '/signup',  to: 'registrations#create'
+        # post    '/signup',  to: 'registrations#create'
         post    '/login',   to: 'sessions#create'
         delete  '/logout',  to: 'sessions#destroy'
       end
