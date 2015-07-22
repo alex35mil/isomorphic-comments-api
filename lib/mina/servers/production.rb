@@ -1,7 +1,7 @@
 task :production do
 
-  set :domain,          'ssh.your-app.com'
-  set :public_domain,   'api.your-app.com'
+  set :domain,          'do_sbjs'
+  set :public_domain,   'api.isomorphic-comments.alexfedoseev.com'
   set :app_server_name, "#{app}"
   set :app_sys_id,      "#{app}-#{app_part}"
 
